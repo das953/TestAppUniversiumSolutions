@@ -1,0 +1,30 @@
+<mat-card class="cardMain">
+  <mat-card-header class="gradientBackground cardHeader">
+    <mat-card-title>Log in to FAU Research Hub</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="cardContent">
+    <mat-list>
+      <mat-list-item>
+        <div class="emailWrapper">
+          <input class="emailInput" matInput placeholder="{{emailPlaceholder}}" type="email" value="" #emailInput />
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <div class="passwordWrapper">
+          <input class="passwordInput" matInput placeholder="{{passwordPlaceholder}}" type="password" value="" #passwordInput>
+          <div  class="passwordImage" (click)="toggleVisibility(passwordInput)"></div>
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <button class="gradientBackground themedButton mat-elevation-z2" mat-button (click)="submit([emailInput, passwordInput])">Log in</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button class="simpleButton">Forgot password?</button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button class="simpleButton" routerLink="/auth">Cancel</button>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
+

@@ -1,0 +1,97 @@
+pre {
+  width: 100%;
+  text-align: center;
+  border: 0px;
+  background-color: transparent;
+  color: #BBBBBB;
+}
+
+button {
+  width: 100%;  
+  text-align: center;
+  padding: 0;
+}
+
+.gradientBackground {
+  background-image: linear-gradient(to right, #963558, #235179);
+  color: white;
+}
+
+.cardMain {
+  padding: 0;
+  width: 70%;
+}
+
+mat-list {
+  width: 90%;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.mat-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.themedButton {
+  height: 100%;
+}
+
+.simpleButton {
+  background-color: white;
+  border: solid 1px #F1F1F1;
+}
+
+.cardContent {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+pre{
+  margin: 0;
+  padding: 0;
+}
+
+.emailWrapper {
+  width: 100%;
+  border: 1px solid #F1F1F1;
+}
+
+.emailInput {
+  width: 100%;
+  border: 0;
+}
+
+.passwordWrapper {
+  width: 100%;
+  border: 1px solid #F1F1F1;
+  display: inline-block;
+  height: 70%;
+}
+
+.passwordInput {
+  float: left;
+  margin-top: 5px;
+  width: 80%;
+  border: 0;
+}
+
+.passwordImage {
+  float: right;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-image: url(/api/Files/GetImageByName/?fileName=show_hide_password_icon.png);
+  width: 10%;
+  border: 0;
+}
